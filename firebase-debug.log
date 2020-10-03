@@ -1,0 +1,30 @@
+[debug] [2020-10-03T07:24:49.270Z] ----------------------------------------------------------------------
+[debug] [2020-10-03T07:24:49.271Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting:bateponto-admin
+[debug] [2020-10-03T07:24:49.271Z] CLI Version:   8.11.2
+[debug] [2020-10-03T07:24:49.271Z] Platform:      linux
+[debug] [2020-10-03T07:24:49.271Z] Node Version:  v12.14.1
+[debug] [2020-10-03T07:24:49.272Z] Time:          Sat Oct 03 2020 04:24:49 GMT-0300 (GMT-03:00)
+[debug] [2020-10-03T07:24:49.272Z] ----------------------------------------------------------------------
+[debug] [2020-10-03T07:24:49.272Z] 
+[debug] [2020-10-03T07:24:49.275Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-03T07:24:49.276Z] > authorizing via signed-in user
+[debug] [2020-10-03T07:24:49.276Z] [iam] checking project bate-ponto-a2fb1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-03T07:24:49.277Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/bate-ponto-a2fb1:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-03T07:24:50.094Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Oct 2020 07:24:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=733","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-03T07:24:50.095Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/bate-ponto-a2fb1  
+ 
+[debug] [2020-10-03T07:24:51.079Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Oct 2020 07:24:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'bate-ponto-a2fb1'...
+[info] 
+[info] i  deploying hosting 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/bate-ponto-a2fb1/overview
+[debug] [2020-10-03T07:24:52.437Z] TypeError: Cannot read property 'deploys' of undefined
+    at /usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:85:36
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[error] 
+[error] Error: An unexpected error has occurred.
