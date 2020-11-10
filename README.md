@@ -1,4 +1,5 @@
 ## Sobre
 
-Novo projeto: Bate Ponto Administrator
+Novo projeto: Sistema de registro de ponto. 
+Atualmente em faze inicial.
 
