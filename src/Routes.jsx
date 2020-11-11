@@ -1,9 +1,12 @@
-import React, { Suspense } from "react";
-import { Route } from "react-router-dom";
+import React, { lazy, Suspense } from "react";
+import { Redirect, Route } from "react-router-dom";
 import Template from "./components/Template";
 import { Backdrop, CircularProgress, makeStyles } from "@material-ui/core";
-import Home from "./screens/Home";
 import SwitchRouter from "./components/SwitchRouter";
+
+const Sigin = lazy(() => import("./screens/Sigin"));
+const Home = lazy(() => import("./screens/Home"));
+const NotFound = lazy(() => import("./screens/NotFound"));
 
 const useStyles = makeStyles((theme) => ({
   backdrop: {
@@ -27,7 +30,10 @@ export default function Routes() {
               }
             >
               <SwitchRouter>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/" component={Sigin} />
+                <Route exact path="/home" component={Home} />
+                <Route path="/404" component={NotFound} />
+                <Redirect from="/*" to="/404" />
               </SwitchRouter>
             </Suspense>
           </Template>
